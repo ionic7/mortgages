@@ -378,7 +378,7 @@ h4.logopage
 
 
 
-/*script */
+/*script 7 */
 
 #top {
   height: 10em;
@@ -509,7 +509,7 @@ a#mid11 {
   margin: -48px 0 0 0;
 }
 
-#mid9
+#brates
 {
   text-align: center;
   color:#33cd5f;
@@ -542,4 +542,17 @@ a#mid11 {
 input#mid2 {
   margin: 0px 0px 0px 55px;
   font-size: 28px;
+}
+
+#tele7{
+  margin: 0px 1.5em 0px 8em;
+  color:#33cd5f;
+}
+
+#vert7
+{
+
+color:#33cd5f;
+
+
 }

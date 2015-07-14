@@ -64,13 +64,25 @@ $stateProvider
         templateUrl:'7.html',
         controller: 'SignInCtrl'
 
+  })
+
+ .state('7a', {
+    name:'7a',
+  url:'/',
+       
+        templateUrl:'7a.html',
+        controller: 'SignInCtrl'
+
   });
 
 
  $urlRouterProvider.otherwise('/');
 });
 
-app.controller('SignInCtrl', function($scope, $state) {
+
+
+
+app.controller('SignInCtrl', function($scope, $state,$ionicSideMenuDelegate) {
 
   var firstInc =125000;
   var secondInc=10000;
@@ -102,18 +114,33 @@ $scope.next = function() {
  
   };
 
- $scope.console1={};
+
+
+ $scope.toggleLeft = function() {
+            $ionicSideMenuDelegate.toggleLeft();
+        };
+
+
+  $scope.$root.enableRight = true;
+
+
+
+ $scope.console1={}; // To store the value of the first input box in Script 5 and use it in script 7
+  $scope.console3={};  // To store the value of the  third input box in Script 5 and use it in script 7
+
  $scope.console1.value1="£120000";
+ $scope.console3.value2="35";
 
-
-  $scope.inc1 = function(data1) {
+  $scope.inc1 = function(data1)      // button to increment and decrement the value of first input box
+  {
     firstInc= data1+firstInc;
     $scope.console1.value1 ="£"+firstInc;
         $scope.counter=1;
 
         };
 
-   $scope.inc2 = function(data2) {
+   $scope.inc2 = function(data2)      // button to increment and decrement the value of second input box
+    {
 
     secondInc= data2+secondInc;
     $scope.console2="£"+secondInc;
@@ -122,7 +149,8 @@ $scope.next = function() {
  };
 
 
-  $scope.inc3 = function(data3) {
+  $scope.inc3 = function(data3)      // button to increment and decrement the value of third input box
+   {
 
     thirdInc= data3+thirdInc;
     $scope.console3=thirdInc+" Years";
@@ -131,7 +159,9 @@ $scope.next = function() {
   };
 
   
- $scope.result1 =$scope.console1.value1;
+ $scope.result1 =$scope.console1.value1;     // NOT WORKING..Objective is to store the final result of first input box
+  $scope.result2 =$scope.console3.value2;    //NOT WORKING..Objective is to store the final result of third input box
+
 
    $scope.sixthPage = function() {
     
@@ -139,17 +169,27 @@ $scope.next = function() {
 
    if($scope.counter==1)
    {
-    alert("hiiiii")
+    $scope.result1=$scope.console1.value1 ;    // able to get the desired value here inside a function
+   
 
    }
 
    else
    {
-    alert("hello");
+    
+
    }
 
 
  };
+
+
+   $scope.sidePage = function() {
+    
+   $state.go('7a');
+ 
+  };
+
  
  
 
