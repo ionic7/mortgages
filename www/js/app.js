@@ -73,11 +73,66 @@ $stateProvider
         templateUrl:'7a.html',
         controller: 'SignInCtrl'
 
-  });
+  })
+
+
+ 
+
+.state('7b', {
+    name:'7b',
+  url:'/',
+       
+        templateUrl:'7b.html',
+        controller: 'SignInCtrl'
+
+  })
+
+.state('7c', {
+    name:'7c',
+  url:'/',
+       
+        templateUrl:'7c.html',
+        controller: 'SignInCtrl'
+
+  })
+
+
+.state('8', {
+    name:'8',
+  url:'/',
+       
+        templateUrl:'8.html',
+        controller: 'SignInCtrl'
+
+  })
+
+.state('9', {
+    name:'9',
+  url:'/',
+       
+        templateUrl:'9.html',
+        controller: 'SignInCtrl'
+
+  })
+
+.state('10', {
+    name:'10',
+  url:'/',
+       
+        templateUrl:'10.html',
+        controller: 'SignInCtrl'
+
+  })
+
+;
+
 
 
  $urlRouterProvider.otherwise('/');
 });
+
+
+
 
 
 
@@ -87,8 +142,6 @@ app.controller('SignInCtrl', function($scope, $state,$ionicSideMenuDelegate) {
   var firstInc =125000;
   var secondInc=10000;
   var thirdInc=35;
-
-
 
 
 $scope.create = function() {
@@ -117,8 +170,8 @@ $scope.next = function() {
 
 
  $scope.toggleLeft = function() {
-            $ionicSideMenuDelegate.toggleLeft();
-        };
+   $ionicSideMenuDelegate.toggleLeft();
+ };
 
 
   $scope.$root.enableRight = true;
@@ -130,15 +183,27 @@ $scope.next = function() {
 
  $scope.console1.value1="£120000";
  $scope.console3.value2="35";
-
+var self = this;
   $scope.inc1 = function(data1)      // button to increment and decrement the value of first input box
   {
     firstInc= data1+firstInc;
     $scope.console1.value1 ="£"+firstInc;
         $scope.counter=1;
 
+     
+
         };
 
+
+function result()
+{
+
+
+   result1=self.console1;
+
+
+
+}
    $scope.inc2 = function(data2)      // button to increment and decrement the value of second input box
     {
 
@@ -153,35 +218,31 @@ $scope.next = function() {
    {
 
     thirdInc= data3+thirdInc;
-    $scope.console3=thirdInc+" Years";
+    $scope.console3.value1=thirdInc+" Years";
+    $scope.console3.value2=thirdInc;
    
  
   };
 
+/*$scope.$watch(function () {
+    return self.console1;
+   }, function() {
+    result()
+    ;
+   });
+*/
+
+
   
- $scope.result1 =$scope.console1.value1;     // NOT WORKING..Objective is to store the final result of first input box
-  $scope.result2 =$scope.console3.value2;    //NOT WORKING..Objective is to store the final result of third input box
+ //$scope.result1 =$scope.console1.value1;     // NOT WORKING..Objective is to store the final result of first input box
+  //$scope.result2 =$scope.console3.value2;    //NOT WORKING..Objective is to store the final result of third input box
 
 
    $scope.sixthPage = function() {
     
    $state.go('6');
 
-   if($scope.counter==1)
-   {
-    $scope.result1=$scope.console1.value1 ;    // able to get the desired value here inside a function
-   
-
-   }
-
-   else
-   {
-    
-
-   }
-
-
- };
+    };
 
 
    $scope.sidePage = function() {
@@ -190,11 +251,50 @@ $scope.next = function() {
  
   };
 
+  $scope.calcPage = function() {
+    
+   $state.go('7b');
  
+  };
  
+  $scope.journeyPage = function() {
+    
+   $state.go('7c');
+ 
+  };
+
+
+   $scope.eighthPage = function() {
+    
+   $state.go('8');
+ 
+  }
+
+
+$scope.ninethPage = function() {
+    
+   $state.go('9');
+ 
+  }
+
+  $scope.tenthPage = function() {
+    
+   $state.go('10');
+ 
+  }
+
+
+  ;
 
   } 
 );
+
+
+
+
+
+
+
 
 
 
@@ -237,10 +337,6 @@ app.controller('navCtrl', function($scope, $state) {
     $state.go('7');
     //do what you need here
 }, 5000);
-
-
-
-
 
 }
 );

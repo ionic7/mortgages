@@ -27,416 +27,722 @@
 
 
   
-<ion-nav-view></ion-nav-view>
-
-  <script id="1.html" type="text/ng-template" ng-controller="SignInCtrl">
-   <div class="img-loc">
-      <img src="img/logo_intro.png">
-    </div>
-  <div class="bar1 bg-footer">     
-    <div class="row  responsive-sm">
-    <div class="col">
-      <button class="button button-block button-balanced" ng-click="create()">CREATE PROFILE</button>
-    </div>
-    <div class="col">
-      <button class="button button-block">SIGN IN</button>
-    </div>
-  </div> 
-  </div>
-  </script>
-
-
-
-  <script id="2.html" type="text/ng-template" ng-controller="SignInCtrl">
- <ion-view view-title>
- <ion-nav-bar >
-        <ion-nav-back-button class="button-clear icon-left ion-chevron-left">
-        </ion-nav-back-button>
-      </ion-nav-bar>
-
-      <ion-nav-view class="slide-left-right"></ion-nav-view>
-
-   <ion-nav-buttons side="left">
-           <div class="bar bar-header bar-shadow">
-   <a class="button button-clear" style="color:white">
-     Create Profile
-    
-       <i class="icon ion-ios-telephone" id="t1"></i>
-      <i class="ion-android-more-vertical"></i>
-
-   </a>
-  </div>
-          </ion-nav-buttons>
-    
-
-   <div class="list">
-
-   <div class="middle">
-
-  <h2><font size="5">What type of home <br/>buyer are you?</h2>
-
-  </div>
-
-
-  <div class="sublist">
-   
-   <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="next()"><font size="5">
-   <i class="icon ion-home"></i>First time buyer</a>
-   
-
-   <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="next()"><font size="5">
-   <i class="ion-android-bus"></i>Home mover</a>
-
-
-   <a class=" button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="next()"><font size="5">
-   <i class="icon ion-stats-bars"></i>Investor</a>
-
-
-   <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="next()"><font size="5">
-   <i class="icon ion-pinpoint"></i>Self builder</a>
-
-  </div>
-  </div>
-   </ion-view>
-  </script>
-
-
-
-
-  <script id="3.html" type="text/ng-template" ng-controller="SignInCtrl">
-  <ion-view view-title>
-   <ion-nav-bar >
-        <ion-nav-back-button class="button-clear icon-left ion-chevron-left">
-        </ion-nav-back-button>
-      </ion-nav-bar>
-
-      <ion-nav-view class="slide-left-right"></ion-nav-view>
-
-   <ion-nav-buttons side="left">
-           <div class="bar bar-header bar-shadow">
-   <a class="button button-clear" style="color:white">
-  Your deposit
-    
-       <i class="icon ion-ios-telephone" id="t2"></i>
-      <i class="ion-android-more-vertical"></i>
-
-   </a>
-  </div>
-          </ion-nav-buttons>
-
-   <div class="list">
-
-   <div class="middle">
-
-  <h2><font size="5">How is saving for<br/>your deposit going?</h2>
-
-  </div>
-
-
-  <div class="sublist">
-   
-   <a class="button icon-right ion-chevron-right button-clear button-light button-block" id=1 style="color:white" align="right" ng-click="nextPage()"><font size="5">
-   <i class="icon ion-social-usd"></i>Great, all saved</a>
-   
-
-   <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="nextPage()"><font size="5">
-    <i class="icon ion-social-reddit"></i>Nearly there</a>
-
-
-   <a class=" button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="nextPage()"><font size="5"> <i class="icon ion-social-reddit-outline"></i>Just started</a>
-
-
-   <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="nextPage()"><font size="5">
-   <i class="icon ion-alert-circled"></i>Havent started</a>
-
-  </div>
-  </div>
-   </ion-view>
-  </script>
-
-
-
-
-  <script id="4.html" type="text/ng-template" ng-controller="SignInCtrl">
-  <ion-view view-title>
- <ion-nav-bar >
-        <ion-nav-back-button class="button-clear icon-left ion-chevron-left">
-        </ion-nav-back-button>
-      </ion-nav-bar>
-
-      <ion-nav-view class="slide-left-right"></ion-nav-view>
-   <ion-nav-buttons side="left">
-           <div class="bar bar-header bar-shadow">
-   <a class="button button-clear" style="color:white">
-        Location
-    
-       <i class="icon ion-ios-telephone" id="t3"></i>
-      <i class="ion-android-more-vertical"></i>
-       </a>
-  </div>
-        
-    </ion-nav-buttons>
-  <div class="list">
-
-   <div class="middle">
-
-  <h2 class="x"><font size="5">Fair play! Where are<br/>you looking to buy?</h2>
-
-  </div>
-
-
-  <div class="list">
-    <label class="item item-input item-stacked-label">
-  <input type="text" placeholder="City">
-  </label>
-  </div>
-
-
-     
-
-     <div id="map" data-tap-disabled="true"></div>
-    
-
-      <ion-footer-bar class="bar-stable">
-        <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate"></a>
-      </ion-footer-bar>
-   
-
-   <button class="button button-balanced button-block" id="four" ng-click="fifthPage()">
-    NEXT
-  </button>
-  </ion-view>
-
-  </script>
-
- 
-
-
-
-
-
-  <script id="5.html" type="text/ng-template" ng-controller="SignInCtrl">
-  <ion-view view-title>
-
-  <ion-nav-bar >
-        <ion-nav-back-button class="button-clear icon-left ion-chevron-left">
-        </ion-nav-back-button>
-      </ion-nav-bar>
-
-      <ion-nav-view class="slide-left-right"></ion-nav-view>
-
- <ion-nav-buttons side="left">
-    <div class="bar bar-header bar-shadow">
-       <a class="button button-clear" style="color:white">
-        Your Mortgage
-    
-        <i class="icon ion-ios-telephone" id="t4"></i>
-        <i class="ion-android-more-vertical"></i>
-        </a>  
-    </div>
-  </ion-nav-buttons>
-
-
-    <div class="middle">
-
-        <h2 class="y"><font size="5">Nice. Lets work out your</h2>
-        <h2 class="z" align="center"><font size="5">repayment cost</h2>
-    </div>
-
-
+    <ion-nav-view></ion-nav-view>
+
+      <script id="1.html" type="text/ng-template" ng-controller="SignInCtrl">
+          <div class="img-loc">
+              <img src="img/logo_intro.png">
+          </div>
   
-  <div class="row" id="row1">
-      <div> <h4 id="para1" align="center">Property Price</h4></div>
-      <a class= "button button-clear" id="inc" ng-click="inc1(-5000)" >-</a>
-      <div class="col"><input type="text" id="five" placeholder="£120000" size="36.5" disabled ng-model="console1.value1"></div>
-      <a class="button button-clear" id="inc" ng-click="inc1(5000)" >+</a>
-  </div>
-
-  
-  <div class="row" id="row2">
-      <div> <h4 id="para2" align="center">Deposit Saved</h4></div>
-      <a class= "button button-clear" id="inc" ng-click="inc2(-1000)" >-</a>
-      <div class="col"><input type="text" id="five" placeholder="£10000" size="36.5" disabled ng-model="console2"></div>
-      <a class= "button button-clear" id="inc" ng-click="inc2(1000)" >+</a>
-  </div>
-
-
-  <div class="row" id="row2">
-      <div> <h4 id="para3" align="center">Loan Term</h4></div>
-      <a class= "button button-clear" id="inc" ng-click="inc3(-1)" >-</a>
-      <div class="col"><input type="text" id="five" placeholder="35 Years" size="36.5"  disabled ng-model="console3"></div>
-      <a class= "button button-clear" id="inc" ng-click="inc3(1)" >+</a>
-  </div>
-
-   
-   <button class="button button-balanced button-block" id="button5" ng-click="sixthPage()">
-    CREATE MY PROFILE
-  </button>
-
-  </ion-view>
-  </script>
+          <div class="bar1 bg-footer">     
+            <div class="row  responsive-sm">
+                <div class="col">
+                  <button class="button button-block button-balanced" ng-click="create()">CREATE PROFILE</button>
+                </div>
+    
+                <div class="col">
+                  <button class="button button-block">SIGN IN</button>
+                </div>
+            </div> 
+          </div>
+      </script>
 
 
 
+        <!--SCRIPT 2 -->
 
-
-   
-<script id="6.html" type="text/ng-template" ng-controller="SignInCtrl">
- <ion-view view-title>
-   
- <div class="loading-spinner"></div>
-
- <div class="logo">
- <i class="ion-home" id="home6"></i>
- <h4 class="logopage">Building your profile</h4>
-</div>
-
-
- </ion-view>
- 
-  </script>
-
-
-  <script id="7.html" type="text/ng-template" ng-controller="SignInCtrl">
-  <ion-side-menus>
- <ion-view view-title>
- <ion-nav-bar >
-        
-      
+    <script id="2.html" type="text/ng-template" ng-controller="SignInCtrl">
+      <ion-view view-title>
+          <ion-nav-bar >
+           <ion-nav-back-button class="button-clear icon-left ion-chevron-left"></ion-nav-back-button>
+          </ion-nav-bar>
 
       <ion-nav-view class="slide-left-right"></ion-nav-view>
-      <ion-nav-buttons side="left" id="final">
-
-         <div class="bar bar-header bar-shadow" id="seven">
-         <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()">
-          </button>
-      
-         <i class="ion-home" id="home7"></i>
-       <a class="button button-clear" style="color:black" id="pane7">
-          My Home
-           
-          <i class="icon ion-ios-telephone" id="tele7"></i>
-          <i class="ion-android-more-vertical" id="vert7"></i>
+      <ion-nav-buttons side="left">
+        <div class="bar bar-header bar-shadow">
+          <a class="button button-clear" style="color:white">
+            Create Profile
+            <i class="icon ion-ios-telephone" id="t1"></i>
+            <i class="ion-android-more-vertical"></i>
           </a>
+        </div>
+      </ion-nav-buttons>
+    
+
+      <div class="list">
+        <div class="middle">
+            <h2><font size="5">What type of home <br/>buyer are you?</h2>
+        </div>
+
+        <div class="sublist">
+          <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="next()">
+          <font size="5">
+              <i class="icon ion-home"></i>First time buyer
+          </a>
+          <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="next()">
+              <font size="5">
+              <i class="ion-android-bus"></i>Home mover
+          </a>
+          <a class=" button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="next()">
+          <font size="5">
+              <i class="icon ion-stats-bars"></i>Investor
+          </a>
+            <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="next()">
+            <font size="5">
+                <i class="icon ion-pinpoint"></i>Self builder
+            </a>
+        </div>
+  
       </div>
-    </ion-nav-buttons>
-
-</ion-nav-bar>
-
-
-
-    <ion-side-menu side="left">
-            <header class="bar bar-header bar-stable">
-                <h1 class="title">Left</h1>
-            </header>
-            <ion-content class="has-header">
-                <ul class="list">
-                      <li class="item current"><i class="fa fa-home fa-fw"></i><a href="#home">Home</a></li>
-    <li class="item"><i class="fa fa-user fa-fw"></i><a href="#about">About</a></li>
-    <li class="item"><i class="fa fa-suitcase fa-fw"></i>Work</li>
-    <li class="item"><i class="fa fa-flask fa-fw"></i>Experiments</li>
-    <li class="item"><i class="fa fa-comment fa-fw"></i>Contact</li>
-                </ul>
-            </ion-content>
-        </ion-side-menu>
+      </ion-view>
+    </script>
 
 
 
 
+                  <!--SCRIPT 3-->
 
+    <script id="3.html" type="text/ng-template" ng-controller="SignInCtrl">
+      <ion-view view-title>
+          <ion-nav-bar >
+            <ion-nav-back-button class="button-clear icon-left ion-chevron-left"></ion-nav-back-button>
+          </ion-nav-bar>
+
+      <ion-nav-view class="slide-left-right"></ion-nav-view>
+        <ion-nav-buttons side="left">
+           <div class="bar bar-header bar-shadow">
+              <a class="button button-clear" style="color:white">
+              Your deposit
+                <i class="icon ion-ios-telephone" id="t2"></i>
+                <i class="ion-android-more-vertical"></i>
+              </a>
+          </div>
+        </ion-nav-buttons>
+
+      <div class="list">
+        <div class="middle">
+          <h2><font size="5">How is saving for<br/>your deposit going?</h2>
+        </div>
+  
+        <div class="sublist">
+          <a class="button icon-right ion-chevron-right button-clear button-light button-block" id=1 style="color:white" align="right" ng-click="nextPage()"><font size="5">
+            <i class="icon ion-social-usd"></i>Great, all saved
+          </a>
+          <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="nextPage()"><font size="5">
+          <i class="icon ion-social-reddit"></i>Nearly there
+          </a>
+          <a class=" button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="nextPage()"><font size="5">
+           <i class="icon ion-social-reddit-outline"></i>Just started
+          </a>
+
+          <a class="button icon-right ion-chevron-right button-clear button-light button-block" style="color:white" ng-click="nextPage()"><font size="5">
+           <i class="icon ion-alert-circled"></i>Havent started
+          </a>
+        </div>
+  
+      </div>
+      </ion-view>
+    </script>
+
+
+
+                         <!--SCRIPT 4-->
+
+    <script id="4.html" type="text/ng-template" ng-controller="SignInCtrl">
+      <ion-view view-title>
+        <ion-nav-bar >
+          <ion-nav-back-button class="button-clear icon-left ion-chevron-left"></ion-nav-back-button>
+        </ion-nav-bar>
+
+      <ion-nav-view class="slide-left-right"></ion-nav-view>
+       <ion-nav-buttons side="left">
+         <div class="bar bar-header bar-shadow">
+          <a class="button button-clear" style="color:white">
+          Location
+           <i class="icon ion-ios-telephone" id="t3"></i>
+           <i class="ion-android-more-vertical"></i>
+          </a>
+        </div>
+       </ion-nav-buttons>
   
 
- <div class="list card">
+      <div class="list">
+        <div class="middle">
+          <h2 class="x"><font size="5">Fair play! Where are<br/>you looking to buy?</h2>
+        </div>
+    
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <input type="text" placeholder="City">
+          </label>
+        </div>
 
-  <div class="item item-avatar" id="top">
+        <div id="map" data-tap-disabled="true"></div>
+    
+        <ion-footer-bar class="bar-stable">
+          <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate"></a>
+        </ion-footer-bar>
+   
+
+        <button class="button button-balanced button-block" id="four" ng-click="fifthPage()">
+          NEXT
+        </button>
+     </ion-view>
+    </script>
+
  
- <div id="tcard">
-  <i class="icon  ion-edit" id="top1"></i>
-   <i class="ion-home" id="top2"></i>
-  <i class="ion-ios-calculator-outline" id="top3"></i>
+
+           <!--SCRIPT 5 -->
+
+     <script id="5.html" type="text/ng-template" ng-controller="SignInCtrl">
+       <ion-view view-title>
+        <ion-nav-bar >
+          <ion-nav-back-button class="button-clear icon-left ion-chevron-left"></ion-nav-back-button>
+        </ion-nav-bar>
+
+      <ion-nav-view class="slide-left-right"></ion-nav-view>
+        <ion-nav-buttons side="left">
+          <div class="bar bar-header bar-shadow">
+            <a class="button button-clear" style="color:white">
+              Your Mortgage
+              <i class="icon ion-ios-telephone" id="t4"></i>
+              <i class="ion-android-more-vertical"></i>
+            </a>  
+          </div>
+        </ion-nav-buttons>
+
+         <div class="middle">
+          <h2 class="y"><font size="5">Nice. Lets work out your</h2>
+          <h2 class="z" align="center"><font size="5">repayment cost</h2>
+        </div>
+
+
+          <div class="row" id="row1">
+            <div> <h4 id="para1" align="center">Property Price</h4></div>
+            <a class= "button button-clear" id="inc" ng-click="inc1(-5000)" >-</a>
+            <div class="col"><input type="text" id="five" placeholder="£120000" size="36.5" disabled ng-model="console1.value1"></div>
+            <a class="button button-clear" id="inc" ng-click="inc1(5000)" >+</a>
+          </div>
+
   
-    </div>
+          <div class="row" id="row2">
+            <div> <h4 id="para2" align="center">Deposit Saved</h4></div>
+            <a class= "button button-clear" id="inc" ng-click="inc2(-1000)" >-</a>
+            <div class="col"><input type="text" id="five" placeholder="£10000" size="36.5" disabled ng-model="console2"></div>
+            <a class= "button button-clear" id="inc" ng-click="inc2(1000)" >+</a>
+          </div>
 
-    <h3 id="top4" style="color:white"> Add a photo of your dream home </h3>
-  </div>
 
-
-
-<div class="item item-avatar" >
-  <div id="middle1">
-      <h3 id="mid1"style="align:center"> Property Price</h3> 
-      <div class="col" id="mid1a">
-
-      <!-- trying to retrieve the data from script 5 into this input box -->
-        <input type="text" id="mid2" size="46.5" ng-model="result1">
-      </div>
-    </div>
-
-  <div id="middle2">
-    <h3 id="mid3"> DEPOSIT</h3>
-    <div class="col" id="mid3a"><input type="text" id="mid4" size="46.5" value="£25,000"></div>
-    <progress max="100" value="80"  color="#33cd5f"></progress>
-  </div>
-
-  <div id="middle3">
-    <div class="row">
-      <div class="col" id="mid5">
-          <h3 id="mid5a"> MORTGAGE</h3>
-          <input type="text" id="mid5b" size="46.5" value="£225,000">
-       </div>
-      <div class="col" id="mid6">
-        <h3 id="mid6a"> REPAYMENTS</h3>
-        <input type="text" id="mid6b" size="46.5" value="£1,000">
-      </div>
-    </div>
-  </div> 
-
-  <div id="middle4">
-   <div class="row">
-    <div class="col" id="mid7">
-      <h3 id="mid7a">FIXED RATE</h3>
-      <input type="text" id="mid7b" size="46.5" value="4.49%">
-    </div>
-
+          <div class="row" id="row2">
+            <div> <h4 id="para3" align="center">Loan Term</h4></div>
+            <a class= "button button-clear" id="inc" ng-click="inc3(-1)" >-</a>
+            <div class="col"><input type="text" id="five" placeholder="35 Years" size="36.5"  disabled ng-model="console3.value1"></div>
+            <a class= "button button-clear" id="inc" ng-click="inc3(1)" >+</a>
+          </div>
 
    
-      <!-- trying to retrieve the data from script 5 into this input box -->
-      <div class="col" id="mid8">
-       <h3 id="mid"style="align:center">LOAN TERM</h3> 
-        <input type="text" id="midloan" size="26.5" ng-model="result2">
+          <button class="button button-balanced button-block" id="button5" ng-click="sixthPage()">
+            CREATE MY PROFILE
+          </button>
+
+        </ion-view>
+    </script>
+
+
+
+                       <!--SCRIPT 6-->
+
+   
+    <script id="6.html" type="text/ng-template" ng-controller="SignInCtrl">
+     <ion-view view-title>
+       <div class="loading-spinner"></div>
+
+        <div class="logo">
+          <i class="ion-home" id="home6"></i>
+          <h4 class="logopage">Building your profile</h4>
+        </div>
+     </ion-view>
+    </script>
+
+
+
+
+                     <!--SCRIPT 7 -->
+
+    <script id="7.html" type="text/ng-template" ng-controller="SignInCtrl">
+      <ion-side-menus>
+        <ion-view view-title>
+         <ion-nav-bar >
+            <ion-nav-view class="slide-left-right"></ion-nav-view>
+            <ion-nav-buttons side="left" id="final">
+              <div class="bar bar-header bar-shadow" id="seven">
+                <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+                <i class="ion-home" id="home7"></i>
+                <a class="button button-clear" style="color:black" id="pane7">
+                  My Home
+                  <i class="icon ion-ios-telephone" id="tele7"></i>
+                  <i class="ion-android-more-vertical" id="vert7"></i>
+                </a>
+              </div>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+
+
+<!--
+        <ion-side-menu side="left">
+          <ul class="list">
+            <li class="item current"><i class="fa fa-home fa-fw"></i><a href="#home">Home</a></li>
+            <li class="item"><i class="fa fa-user fa-fw"></i><a href="#about">About</a></li>
+            <li class="item"><i class="fa fa-suitcase fa-fw"></i>Work</li>
+            <li class="item"><i class="fa fa-flask fa-fw"></i>Experiments</li>
+            <li class="item"><i class="fa fa-comment fa-fw"></i>Contact</li>
+          </ul>
+        </ion-side-menu>
+-->
+
+
+
+         <div class="list card">
+            <div class="item item-avatar" id="top">
+              <div id="tcard">
+                <i class="icon  ion-edit" id="top1"  ng-click="journeyPage()"></i>
+                <i class="ion-home" id="top2"></i>
+                <i class="ion-ios-calculator-outline" id="top3" ng-click="calcPage()"></i>
+              </div>
+              <h3 id="top4" style="color:white"> Add a photo of your dream home </h3>
+            </div>
+
+            <div class="item item-avatar" >
+             <div id="middle1">
+                <h3 id="mid1"style="align:center"> Property Price</h3> 
+                <div class="col" id="mid1a">
+
+                <!-- trying to retrieve the data from script 5 into this input box -->
+                   <input type="text" id="mid2" size="46.5" ng-model="console1.value1">
+                 </div>
+             </div>
+
+          <div id="middle2">
+             <h3 id="mid3"> DEPOSIT</h3>
+             <div class="col" id="mid3a"><input type="text" id="mid4" size="46.5" value="£25,000"></div>
+             <progress max="100" value="80"  color="#33cd5f"></progress>
+          </div>
+
+          <div id="middle3">
+            <div class="row">
+              <div class="col" id="mid5">
+                <h3 id="mid5a"> MORTGAGE</h3>
+                <input type="text" id="mid5b" size="46.5" value="£225,000">
+              </div>
+              <div class="col" id="mid6">
+                <h3 id="mid6a"> REPAYMENTS</h3>
+                <input type="text" id="mid6b" size="46.5" value="£1,000">
+              </div>
+            </div>
+          </div> 
+
+          <div id="middle4">
+            <div class="row">
+              <div class="col" id="mid7">
+                <h3 id="mid7a">FIXED RATE</h3>
+                <input type="text" id="mid7b" size="46.5" value="4.49%">
+              </div>
+
+             <!-- trying to retrieve the data from script 5 into this input box -->
+        
+              <div class="col" id="mid8">
+                <h3 id="mid"style="align:center">LOAN TERM</h3> 
+                <input type="text" id="midloan" size="26.5" ng-model="console3.value2">
+              </div>
+
+              <div class="col" id="mid9">
+                <button class="button-clear" id="brates" ng-click="sidePage()">
+                  SEE RATES
+                </button>
+              </div>
+            </div>
+          </div>
+
+           
+          <div id="middle5">
+            <h3 id="mid10" style="align:center"> RECALCULATE</h3>
+          </div>
+          </div>
+        </div>
+
+        <a class="button button-balanced button-block" id="mid11" ng-click="journeyPage()">
+            NEXT STEP: CONFIRM YOUR BORROWINGS
+        </a>
+      </ion-view>
+    </script>
+
+
+
+
+
+
+
+                         <!--SCRIPT 7a -->
+
+
+
+    <script id="7a.html" type="text/ng-template" ng-controller="SignInCtrl">
+     <ion-view view-title>
+      <ion-nav-bar >
+        <ion-nav-back-button class="button-clear icon-left ion-chevron-left">
+        </ion-nav-back-button>
+      </ion-nav-bar>
+        
+      <ion-nav-view class="slide-left-right"></ion-nav-view>
+        <ion-nav-buttons side="left" id="final">
+         <div class="bar bar-header bar-shadow" id="seven">
+            <i class="ion-home" id="home7a"></i>
+            <a class="button button-clear" style="color:black" id="pane7" >
+             Rates
+             </a>
+         </div>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+
+
+      <div class="list card" id="7a">
+        <div class="item item-avatar" id="top7a">
+           <h3 id="rates">Rates and Payments</h3>
+           <div class="row" id="r7a">
+              <div class="col" id="c7a">
+                <button class="button button-block button-balanced" id="b1" >Fixed</button>
+              </div>
+             <div class="col" id="c7a">
+              <button class="button button-clear" id="b2">Variable</button>
+             </div>
+          </div> 
+        </div>
+
+        <div class="item item-image" id="mid7a">
+          <img src="img/rates_sample.png" id="img7a">
+        </div>
+
+
+      <div class="item item-image" id="bottom7a">
+          <img src="img/rates_sample.png" id="img7a">
       </div>
 
-    <div class="col" id="mid9">
-         <button class="button-clear" id="brates" ng-click="sidePage()">
-       SEE RATES
-      </button>
-     </div>
-
-
-   </div>
-  </div>
-
-  <div id="middle5">
-    <h3 id="mid10" style="align:center"> RECALCULATE</h3>
-   </div>
- </div>
-</div>
-
- <a class="button button-balanced button-block" id="mid11">NEXT STEP: CONFIRM YOUR BORROWINGS
-  
-  </a>
-
-  </ion-view>
- 
+      </ion-view>
+    </ion-side-menus>
   </script>
 
 
-<script id="7a.html" type="text/ng-template" ng-controller="SignInCtrl">
+                           
+                           <!--SCRIPT 7.b -->
+
+  <script id="7b.html" type="text/ng-template" ng-controller="SignInCtrl">
+     <ion-view view-title>
+      <ion-nav-bar >
+        <ion-nav-back-button class="button-clear icon-left ion-chevron-left">
+        </ion-nav-back-button>
+      </ion-nav-bar>
+        
+      <ion-nav-view class="slide-left-right"></ion-nav-view>
+        <ion-nav-buttons side="left" id="final">
+         <div class="bar bar-header bar-shadow" id="seven">
+          <i class="ion-home" id="home7a"></i>
+          <a class="button button-clear" style="color:black" id="pane7" >
+             My Calculations
+          </a>
+         </div>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+
+      <div class="list card">
+        <div class="item item-avatar" id="backtop7b">
+          <div id="tcard">
+            <i class="ion-home" id="sevena1"></i>
+            <i class="ion-ios-calculator-outline" id="sevena2"></i>
+            <i class="icon ion-edit" id="top3" ng-click="calcPage()"></i>
+          </div>
+            
+            <h3 id="sevena4" style="color:white"> Find your dream home </h3>
+        </div>
+
+       <div class="item item-avatar">
+          <div class="row" id="row1">
+            <div> <h4 id="para1" align="center">Property Price</h4></div>
+            <a class= "button button-clear" id="inc" >-</a>
+            <div class="col"><input type="text" id="five" placeholder="£120000" size="36.5"></div>
+            <a class="button button-clear" id="inc" >+</a>
+          </div>
+        
+          <div class="row" id="row2">
+            <div> <h4 id="para2" align="center">Deposit Saved</h4></div>
+            <a class= "button button-clear" id="inc" >-</a>
+            <div class="col"><input type="text" id="five" placeholder="£10000" size="36.5" disabled ng-model="console2"></div>
+            <a class= "button button-clear" id="inc"  >+</a>
+          </div>
+  
+          <div class="row" id="row2">
+            <div> <h4 id="para3" align="center">Loan Term</h4></div>
+            <a class= "button button-clear" id="inc">-</a>
+            <div class="col"><input type="text" id="five" placeholder="35 Years" size="36.5" ></div>
+            <a class= "button button-clear" id="inc"  >+</a>
+          </div>
+        </div>
+      </ion-view>
+    </script>
+
+
+
+                         <!--SCRIPT 7.c -->
+
+    <script id="7c.html" type="text/ng-template" ng-controller="SignInCtrl">
+      <ion-view view-title>
+        <ion-nav-bar >
+          <ion-nav-view class="slide-left-right"></ion-nav-view>
+             <ion-nav-buttons side="left" id="final">
+              <div class="bar bar-header bar-shadow" id="seven">
+                <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+                <i class="ion-home" id="home7c"></i>
+                <a class="button button-clear" style="color:black" id="pane7">
+                  My Mortgage Journey
+                </a>
+             </div>
+            </ion-nav-buttons>
+          </ion-nav-bar>
+
+        <div class="list card" id="back7c">
+          <div class="item item-avatar" id="backtop7b">
+            <div id="tcard">
+              <i class="ion-ios-calculator-outline" id="top7c"></i>
+              <i class="ion-home" id="top3" ></i>
+            </div>
+
+            <h3 id="head7c" style="color:white"> My Mortgage Journey</h3>
+          </div>
+
+          <div class="item item-image" id="mid7c">
+              <img src="img/my_application_dots1.png" id="img7c">
+          </div>
+
+          <div class="item item-avatar" id="backtop2">
+              <button class="button button-balanced button-block" id="button7c" ng-click="eighthPage()" >
+                CONTINUE APPLICATION
+              </button>
+              <button class="button button-light" id="b7c" >
+                See remaining steps
+              </button>
+          </div>
+        </div>
+      </ion-view>
+    </script>
+
+
+
+                                         <!--SCRIPT 8 -->
+
+  <script id="8.html" type="text/ng-template" ng-controller="SignInCtrl">
  <ion-view view-title>
 
- </ion-view>
- </ion-side-menus>
- 
-  </script>
+        <ion-nav-bar >
+          <ion-nav-back-button class="button-clear icon-left ion-chevron-left"></ion-nav-back-button>
+        </ion-nav-bar>
+          <ion-nav-view class="slide-left-right"></ion-nav-view>
+             <ion-nav-buttons side="left" id="final">
+              <div class="bar bar-header bar-shadow" id="seven">
+              
+                <i class="ion-home" id="home8"></i>
+                <a class="button button-clear" style="color:black" id="pane7">
+                  My Application(1 of 4)
+                </a>
+             </div>
+          </ion-nav-buttons>
+  
+          <div class="list card" >
+            <div class="item item-avatar" id="icard8">
+              <div>      
+                <progress max="100" value="12" id="progress8" color="#33cd5f"> </progress>
+                 <p id="ptext8">12%</p>
+              </div>
+            </div>
+
+
+
+          <div class="item item-avatar" id="i8">
+            <div class="list" id="list8">
+              <label class="item item-input item-stacked-label" id="l8">
+                <span class="input-label">Where are you looking to buy?</span>
+                <input type="text" id="input8" placeholder="Dublin">
+              </label>
+              <label class="item item-input item-stacked-label" id="l8">
+                <span class="input-label">How much are thinking of borrowing?</span>
+                <input type="text" id="input8" placeholder="£190,000">
+             </label>
+              <label class="item item-input item-stacked-label" id="l8">
+                <span class="input-label">How much of a deposit do you have?</span>
+                <input type="text" id="input8" placeholder="£23,000">
+              </label>
+
+              <div class="row" id="srow8">
+                <div> <h4 align="center" id="h8">Mortgage Term</h4></div>
+               
+                  <a class= "button button-light" id="inc8" ng-click="inc3(-1)" >-</a>
+                  <div class="col"><input type="text" id="sinp8" placeholder="35 Years" size="36.5"  disabled ng-model="console3.value1"></div>
+                  <a class= "button button-light" id="inc8a" ng-click="inc3(1)" >+</a>
+                 
+              </div>
+               <button class="button button-balanced button-block" id="button8" ng-click="ninethPage()" >
+                Next
+              </button>
+             </div>
+
+           </div>
+          </ion-view>
+        </script>
+
+
+
+
+
+                        <!--script 9-->
+
+
+
+      <script id="9.html" type="text/ng-template" ng-controller="SignInCtrl">
+        <ion-view view-title>
+       
+          <ion-nav-bar >
+            <ion-nav-back-button class="button-clear icon-left ion-chevron-left"></ion-nav-back-button>
+            </ion-nav-bar>
+            <ion-nav-view class="slide-left-right"></ion-nav-view>
+              <ion-nav-buttons side="left" id="final">
+                <div class="bar bar-header bar-shadow" id="seven">
+                    <i class="ion-home" id="home8"></i>
+                    <a class="button button-clear" style="color:black" id="pane7">
+                     My Application(2 of 4)
+                    </a>
+                </div>
+               </ion-nav-buttons>
+  
+            <div class="list card" >
+              <div class="item item-avatar" id="icard8">
+                <div>      
+                <progress max="100" value="25" id="progress8" color="#33cd5f"> </progress>
+                 <p id="ptext8">25%</p>
+              </div>
+            </div>
+
+
+
+          <div class="item item-avatar" id="i8">
+            <div class="list" id="list8">
+              <label class="item item-input-stacked-label" id="l9">
+              <span class="input-label" id="s9">How many people are applying?</span>
+
+               <select>
+                  <option>2 applicant</option>
+                  <option selected>1 applicant</option>
+              </select> 
+                </label>  
+            
+              <label class="item item-input item-stacked-label" id="l8">
+                <span class="input-label">Name</span>
+                <input type="text" id="input8" placeholder="Full name">
+             </label>
+              <label class="item item-input item-stacked-label" id="l8">
+                <span class="input-label">Date of birth</span>
+                <input type="text" id="input8" placeholder="DD MM YYYY">
+              </label>
+
+               <label class="item item-input item-stacked-label" id="l8">
+                <span class="input-label">Email address</span>
+                <input type="text" id="input8" placeholder="Please enter your email address">
+              </label>
+
+
+               <button class="button button-balanced button-block" id="button9" ng-click="tenthPage()" >
+                Next
+              </button>
+             </div>
+            </div>    
+          </ion-view>
+        </script>
+
+
+
+
+        <script id="10.html" type="text/ng-template" ng-controller="SignInCtrl">
+          <ion-view view-title>
+
+            <ion-nav-bar >
+              <ion-nav-back-button class="button-clear icon-left ion-chevron-left"></ion-nav-back-button>
+              </ion-nav-bar>
+              <ion-nav-view class="slide-left-right"></ion-nav-view>
+                <ion-nav-buttons side="left" id="final">
+                  <div class="bar bar-header bar-shadow" id="seven">
+                    <i class="ion-home" id="home8"></i>
+                    <a class="button button-clear" style="color:black" id="pane7">
+                     My Application(3 of 4)
+                    </a>
+                  </div>
+               </ion-nav-buttons>
+
+
+               <div class="list card" >
+                  <div class="item item-avatar" id="icard8">
+                    <div>      
+                      <progress max="100" value="60" id="progress8" color="#33cd5f"> </progress>
+                      <p id="ptext8">60%</p>
+                    </div>
+                  </div>
+
+                  <div class="item item-avatar" id="i8">
+                    <div class="list" id="list8">
+                      <label class="item item-input-stacked-label" id="l9">
+                        <span class="input-label" id="s9">How many people are applying?</span>
+                        <select>
+                           <option>Self-Employed</option>
+                            <option selected>Employee</option>
+                        </select> 
+                      </label> 
+                      </div>
+
+                      <div class="row" id="srow10a">
+                        <div> <h4 align="center" id="h10a">Number of children</h4></div>
+                            <a class= "button button-light" id="inc10a" ng-click="inc3(-1)" >-</a>
+                             <div class="col"><input type="text" id="sinp10a" placeholder="0" size="36.5"  disabled ng-model="console3.value1"></div>
+                             <a class= "button button-light" id="inc10b" ng-click="inc3(1)" >+</a>
+                      </div>
+
+
+                      <div class="row" id="srow10b">
+                        <div> <h4 align="center" id="h10b">Guarenteed annual income</h4></div>
+                            <a class= "button button-light" id="op10a" ng-click="inc3(-1)" >-</a>
+                            <div class="col"><input type="text" id="sinp8" placeholder="£55000" size="36.5"  disabled ng-model="console3.value1"></div>
+                             <a class= "button button-light" id="inc8a" ng-click="inc3(1)" >+</a>
+                      </div>
+
+
+                      <div class="row" id="srow10c">
+                        <div> <h4 align="center" id="h10c">Monthly loans and maintenance</h4></div>
+                            <a class= "button button-light" id="app10a" ng-click="inc3(-1)" >-</a>
+                             <div class="col"><input type="text" id="sinp10c" placeholder="100" size="36.5"  disabled ng-model="console3.value1"></div>
+                             <a class= "button button-light" id="app10b" ng-click="inc3(1)" >+</a>
+                      </div>
+
+
+
+
+               <button class="button button-balanced button-block" id="button10a" ng-click="ninethPage()" >
+                Next
+              </button>
+             </div>
+
+           </div>
+
+
+
+
+
+           </ion-view>
+        </script>
+
    </body>
    </html>

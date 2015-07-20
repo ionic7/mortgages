@@ -160,6 +160,12 @@ i.ion-android-more-vertical {
 }
 
 
+
+
+
+
+
+
 i.icon.ion-home {
   margin: 0px 29px 0 7px;
 }
@@ -420,6 +426,7 @@ i#top1 {
   i#top2 {
   font-size: 44px;
   margin: 0px 37px 0px 10px;
+  color:white;
 }
 
 
@@ -528,14 +535,14 @@ a#mid11 {
 {
 
   color: black;
-  margin: 0px 0px 0px 36px;
+  margin: 0px 0px 0px 41px;
 
 }
 
 #home7 {
   color: black;
   font-size: 24px;
-  margin: 5px -49px 0px 28px;
+  margin:7px -55px -1px 10px;
 }
 
 
@@ -549,10 +556,340 @@ input#mid2 {
   color:#33cd5f;
 }
 
-#vert7
+
+#vert7 {
+  color: #33cd5f;
+  margin: 0 39px 0px -9px;
+}
+
+
+/*script 7a */
+
+#home7a {
+  color: black;
+  font-size: 24px;
+  margin: 7px -35px 0px 29px;
+}
+
+h3#rates {
+  color: black;
+  margin: 0px 0px 0px 88px;
+  font-size: 17px;
+}
+
+#top7a{
+
+    height: 7em;
+      margin: 0 -23px 0px -52px;
+}
+
+
+div#mid7a {
+  height: 13em;
+}
+
+div#bottom7a {
+  height: 13em;
+}
+img#img7a{
+  height: 13em;
+}
+
+button#b2 {
+  width: 100%;
+
+  margin: 4px 0px 0px -12px;
+  height: 0em;
+
+
+}
+
+/*script 7b */
+
+#backtop7b
 {
 
-color:#33cd5f;
+height: 10em;
+  background-color:#33cd5f;
+   background-repeat:repeat;
+
+   background-size:cover;
+   z-index: -1;
+
+}
+
+#sevena4{
+    margin: 14px 0px 0 29px;
+}
+
+#sevena2{
+
+    font-size: 44px;
+  margin: 0px 45px 0px 10px;
+  color: white;
+}
+
+#sevena1{
+  margin: 0px 41px 0px 6px;
+  color: white;
+  font-size: 23px;
+}
 
 
+
+
+/*script 7c */
+
+
+#head7c {
+  color: white;
+  margin: 13px 0 0 17px;
+}
+
+
+#home7c{
+
+  color: black;
+  font-size: 24px;
+  margin: 7px -34px -1px 10px;
+}
+
+
+img#img7c {
+  height: 113px;
+  margin: -2px 0px 0 -44px;
+  width: 406px;
+}
+
+
+div#mid7c {
+  height: 6em;
+}
+
+
+i#top7c {
+  margin: 0px 107px 0px 19px;
+  color: white;
+  font-size: 23px;
+}
+
+#b7c
+{
+
+  color: #33cd5f;
+  margin: -5px 0 0 17px;
+
+}
+
+#backtop2
+{ background-color:#ddd;}
+
+
+
+
+button#button7c {
+  margin: -14px 0px 192px -67px;
+  width: 21em;
+}
+
+
+
+
+/*script 8 */
+
+#home8 {
+  color: black;
+  font-size: 24px;
+  margin: 7px -34px -1px 30px;
+}
+
+
+#progress8
+{
+
+  margin: 10px 0px 0px -47px;
+  background-color: #33cd5f;
+}
+
+
+#icard8{
+  height:6em;
+}
+
+#ptext8
+{
+
+  margin: -16px 0 0 17em;
+
+}
+
+
+#list8 {
+  margin: 0 0 0 -56px;
+}
+
+
+#h8
+{
+  color:black;
+  font-size:16px;
+    margin: -6px 0 0 11px;
+      font-weight: normal;
+
+}
+
+
+#sinp8 {
+  margin: 20px -2px 2px -0.75px;
+  height: 49.25px;
+  width: 15.25em;
+  color: black;
+  text-align: center;
+  background: white;
+}
+
+
+
+a#inc8 {
+   margin: 20.5px -1px 4px -111px;
+  width: 10%;
+}
+
+a#inc8a {
+  margin: 20.5px -2px 4px -93px;
+  width: 10%;
+}
+
+#l8
+{
+
+  height: 88px;
+
+
+}
+
+
+
+button#button8 {
+  margin: 37px 0px 192px -15px;
+  width: 22.5em;
+}
+
+div#srow8 {
+  height: 88px;
+}
+#i8{
+
+    height: 29em;
+    background-color:#ddd;
+}
+
+::-webkit-input-placeholder#sinp8{
+   text-align: left;
+   color:black;
+
+}
+
+
+#s9,#l9
+{
+     background-color:#ddd;
+}
+
+select {
+  width: 22.5em;
+  height: 3em;
+    font-family: inherit;
+}
+
+
+
+button#button9{
+  margin: 14px 0px 192px -15px;
+  width: 22.5em;
+}
+
+
+
+
+
+/* script 10 */
+
+
+
+#h10a {
+  color: black;
+  font-size: 16px;
+  margin: -3px 0px 0px -45px;
+  font-weight: normal;
+}
+
+a#inc10a {
+  margin: 21.5px -71px 28px -139px;
+  width: 10%;
+  height: 52px;
+}
+
+
+#sinp10a {
+  margin: 22px 0px 0px 69.25px;
+  height: 49.25px;
+  width: 208.25px;
+  color: black;
+  text-align: center;
+  background: white;
+}
+
+a#inc10b {
+  margin: 22.5px -5px 27px 0px;
+  width: 10%;
+}
+
+
+
+a#op10a {
+  margin: 20.5px -1px 4px -188px;
+  width: 10%;
+}
+
+
+#h10b{
+
+  color: black;
+  font-size: 16px;
+  margin: -6px 0 0 -48px;
+  font-weight: normal;
+
+}
+
+
+h4#h10c {
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
+  margin: 24px 0 0 -49px;
+}
+
+
+a#app10a {
+  margin: 50px 0 0 -222px;
+}
+
+
+input#sinp10c {
+  margin: 50px 0 0 -2px;
+  width: 16em;
+  height: 46px;
+}
+
+
+a#app10b {
+  margin: 50px 0 0 0;
+}
+
+
+
+button#button10a {
+  margin: 12px 0px 192px -71px;
+  width: 22.5em;
 }
